@@ -1,4 +1,3 @@
-PizzaLIst
-=========
+# PizzaList - a Meteor project
 
-A tool to compile a pizza order
+This is supposed to help people at Chalmers IT (and generally) to compile a list of their pizza order.
