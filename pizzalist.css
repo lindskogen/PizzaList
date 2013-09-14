@@ -3,21 +3,24 @@ body {
     font-weight: 200;
     margin: 50px 0;
     padding: 0;
+}
+
+input {
+    font-size: 1.75em;
+}
+
+#outer {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.player {
+    padding: 5px;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -o-user-select: none;
     user-select: none;
-}
-
-#outer {
-    width: 600px;
-    margin: 0 auto;    
-}
-
-.player {
-    cursor: pointer;
-    padding: 5px;
 }
 
 .player .name {
@@ -42,6 +45,43 @@ body {
 .player.selected .score {
     color: black;
 }
+.player .actions {
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+}
+.player .action {
+    height: 12px;
+    width: 20px;
+    margin-bottom: 2px;
+    /* border: 1px solid; */
+    padding: 0 4px 17px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.4em;
+    font-weight: 900;
+    display: block;
+    border-radius: 5px;
+}
+
+.player .plus {
+    color: #38c145;
+}
+
+.player .plus:hover {
+    color: #fff;
+    background-color: #38c145;
+
+}
+.player .minus {
+    color: #dc3826;
+}
+
+.player .minus:hover {
+    color: #fff;
+    background-color: #dc3826;
+
+}
 
 .details, .none {
     font-weight: bold;
@@ -50,7 +90,7 @@ body {
     border-color: #ccc;
     border-width: 4px;
     margin: 50px 10px;
-    padding: 10px 0px;
+    padding: 10px 0;
 }
 
 .none {

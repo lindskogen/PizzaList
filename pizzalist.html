@@ -15,27 +15,20 @@
     {{/each}}
   </div>
 
-  {{#if selected_name}}
-  <div class="details">
-    <div class="name">{{selected_name}}</div>
-    <input type="button" class="inc" value="Give 5 points" />
-  </div>
-  {{/if}}
-
-  {{#unless selected_name}}
   <div class="none">
-    <input type="text" placeholder="Add a pizza?" name="pizzaname" />
+    <input type="text" placeholder="Add a pizza?" id="pizzaname" name="pizzaname" />
     <input type="button" class="inc" value="Add to list" />
   </div>
-  {{/unless}}
 </template>
 
 <template name="entry">
   <div class="player {{selected}}">
     <span class="name">{{name}}</span>
     <span class="score">{{amount}}</span>
-    <a class="">+</a>
-    <a class="">-</a>
+    <div class="actions">
+      <a class="action plus">+</a>
+      <a class="action minus">-</a>
+    </div>
   </div>
 </template>
 
